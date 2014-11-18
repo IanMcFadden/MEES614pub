@@ -1,10 +1,10 @@
 ---
-output: word_document
+output: html_document
 ---
 
-Getting set up for MEES614 - Spatial & Landscape Ecology in R
+Getting set up for MEES614  
 ========================================================
-###=============================================================================
+***
 
 ### R
 
@@ -29,6 +29,7 @@ We will use GitHub to track versions of our R scripts and to turn in homework as
         + [Matt Fitzpatrick: fitzLab-AL](https://github.com/fitzLab-AL)
   + For group work that anyone can access, create a **public** GitHub repository named `mees614-2015-lastname-firstname` using your name.
 3. *Clone* both your **private** and **public** repository to your personal computer.
+4. Within your **private** repository (the one named `mees614-2015-UID-hw`), create a folder named `hw1`. 
 
 ### R Markdown
 
@@ -45,7 +46,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
+```{r, echo=TRUE}
 plot(cars)
 ```
 
