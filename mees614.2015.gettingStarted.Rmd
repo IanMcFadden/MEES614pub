@@ -1,3 +1,6 @@
+---
+output: word_document
+---
 
 Getting set up for MEES614 - Spatial & Landscape Ecology in R
 ========================================================
@@ -5,34 +8,34 @@ Getting set up for MEES614 - Spatial & Landscape Ecology in R
 
 ### R
 
-As the name of the course implies, we will be using R for all coursework. Download and install the latest version of [R](http://cran.r-project.org/) for your platform. 
+As the name of the course implies, we will use R for all coursework. Download and install the latest version of [R](http://cran.r-project.org/) for your platform. 
 
 ### RStudio
 
-Download and install [RStudio](http://www.rstudio.com/). YOu want teh **desktop** version for your platform.
+Download and install [RStudio](http://www.rstudio.com/). You want the **desktop** version for your platform.
 
 ### Stypi
 
-We will be using [Stypi](https://code.stypi.com) to facilitate live, collaborative coding. Please visit the [site](https://code.stypi.com) and create a user account. Next, [email](mfitzpatrick@al.umces.edu) the username to me. 
+We will use [Stypi](https://code.stypi.com) to facilitate live, collaborative coding. Please visit the [site](https://code.stypi.com) and create a user account. When you are done email your Stypi username to me: <mfitzpatrick@al.umces.edu>. 
 
 ### GitHub
 
-We will use GitHub to keep track our code and to turn in homework assignments, among other things. There are multiple steps for setting up your GitHub account for use in this course, as follows:
+We will use GitHub to track versions of our R scripts and to turn in homework assignments. There are multiple steps for setting up your GitHub account for use in this course, as follows:
 
-1. Setup a [GitHub Education account](https://education.github.com/). You'll want a **Student / Individual** account found by click on "Request a discount".
+1. Setup a [GitHub Education account](https://education.github.com/). You'll want a **Student / Individual** account found by clicking on "Request a discount".
 2. Create the following *repositories* (places where you will store your files).
   + For homework and other assignments that only I can see, create a **private** GitHub repository named `mees614-2015-UID-hw`, replacing "UID" with your UID.
-      + Add me as a collaborator to your *private* repository.
+      + Add me as a collaborator to your **private** repository.
         + [Matt Fitzpatrick: fitzLab-AL](https://github.com/fitzLab-AL)
   + For group work that anyone can access, create a **public** GitHub repository named `mees614-2015-lastname-firstname` using your name.
+3. *Clone* both your **private** and **public** repository to your personal computer.
 
 ### R Markdown
 
-Nothing to install here as access to R Markdown comes with RStudio. 
+There's nothing to install or signup for to use R Markdown, which comes with RStudio, but you'll need to read up on R Markdown as you will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). 
 
 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
