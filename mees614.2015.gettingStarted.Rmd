@@ -6,34 +6,49 @@ Getting set up for MEES614
 ========================================================
 ***
 
+## Software & User Accounts
+
 ### R
 
-As the name of the course implies, we will use R for all coursework. Download and install the latest version of [R](http://cran.r-project.org/) for your platform. 
+As the name of the course implies, we will use R for all coursework. Because knowing basic R is a prerequisite for registering for this course, you should not need to download and install the latest version of [R](http://cran.r-project.org/) for your system...unless you just bought a new computer. 
 
-### RStudio
+### Git & GitHub
 
-Download and install [RStudio](http://www.rstudio.com/). You want the **desktop** version for your platform.
+Git is a file version control system and GitHub is an online Git resource for coding-based projects. We will use GitHub to track versions of our R scripts and to turn in homework assignments. There are multiple steps for setting up Git and GitHub for use in this course, as follows:
 
-### Stypi
-
-We will use [Stypi](https://code.stypi.com) to facilitate live, collaborative coding. Please visit the [site](https://code.stypi.com) and create a user account. When you are done email your Stypi username to me: <mfitzpatrick@al.umces.edu>. 
-
-### GitHub
-
-We will use GitHub to track versions of our R scripts and to turn in homework assignments. There are multiple steps for setting up your GitHub account for use in this course, as follows:
-
-1. Setup a [GitHub Education account](https://education.github.com/). You'll want a **Student / Individual** account found by clicking on "Request a discount".
-2. Create the following *repositories* (places where you will store your files).
-  + For homework and other assignments that only I can see, create a **private** GitHub repository named `mees614-2015-UID-hw`, replacing "UID" with your UID.
+1. Download and install [Git](http://git-scm.com/) for your system. Git interfaces with RStudio (see below), but needs to be installed first.
+2. Setup a [GitHub Education account](https://education.github.com/). You'll want a **Student / Individual** account found by clicking on "Request a discount".
+3. Using your newly created Git account, create the following *repositories* (places where you will store your files on GitHub and, eventually, your local computer).
+  + For homework and other assignments that only I can see, create a **private** GitHub repository named `mees614-2015-UID`, replacing "UID" with your UID.
       + Add me as a collaborator to your **private** repository.
         + [Matt Fitzpatrick: fitzLab-AL](https://github.com/fitzLab-AL)
   + For group work that anyone can access, create a **public** GitHub repository named `mees614-2015-lastname-firstname` using your name.
-3. *Clone* both your **private** and **public** repository to your personal computer.
-4. Within your **private** repository (the one named `mees614-2015-UID-hw`), create a folder named `hw1`. 
+4. *Clone* both your **private** and **public** repositories to your personal computer.
+5. Within the newly cloned **private** repository (the one named `mees614-2015-UID`) on your machine, create a folder named `hw1`.
 
-### R Markdown
+### RStudio
 
-There's nothing to install or signup for to use R Markdown, which comes with RStudio, but you'll need to read up on R Markdown as you will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). 
+RStudio is a powerful and productive user interface for R that integrates scripting, running those scripts in R, plotting, help files, and Git. Download and install [RStudio](http://www.rstudio.com/). You want the **desktop** version for your system.
+
+### Stypi
+
+We will use [Stypi](https://code.stypi.com) to facilitate live, collaborative coding. Please visit the [site](https://code.stypi.com) and create a user account. When you are done, email your Stypi username to me: <mfitzpatrick@al.umces.edu>. 
+
+## Completing & Submitting Homework
+
+### Authoring HW using R Markdown
+
+R Markdown comes with RStudio, but you will need to install a few packages the first time you use (RStudio will do this automatically for you). You will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). BTW - this document was created using R Markdown.
+
+* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension.
+* As you work, "commit" your `.rmd` file to your private GitHub directory.
+* Once complete, compile your homework to an HTML document using Rstudio's `Knit HTML` button. This will produce a new, formatted document with `.html` extension.
+
+### Steps for submitting HW using GitHub
+
+1. Check that you have commited all the files associated with your HW assignment to your local Git repository. This may include more than just the `.html` file. For examples, figures a placed in a`/figures` subdirectory
+
+
 
 
 
