@@ -24,7 +24,8 @@ Git is a file version control system and GitHub is an online Git resource for co
         + [Matt Fitzpatrick: fitzLab-AL](https://github.com/fitzLab-AL)
   + For group work that anyone can access, create a **public** GitHub repository named `mees614-2015-lastname-firstname` using your name.
 4. *Clone* both your **private** and **public** repositories to your personal computer.
-5. Within the newly cloned **private** repository (the one named `mees614-2015-UID`) on your machine, create a folder named `hw1`.
+5. On your local machine and within the newly cloned **private** repository (the one named `mees614-2015-UID`), create a folder named `hw01`. You will need to create a new directory for each assignment (but one is enough for now).
+6. 
 
 ### RStudio
 
@@ -40,13 +41,24 @@ We will use [Stypi](https://code.stypi.com) to facilitate live, collaborative co
 
 R Markdown comes with RStudio, but you will need to install a few packages the first time you use (RStudio will do this automatically for you). You will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). BTW - this document was created using R Markdown.
 
-* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension.
-* As you work, "commit" your `.rmd` file to your private GitHub directory.
+* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension. **Be sure to save the file in the correct local folder** (e.g., `hw01` for the first homework assignment.
+* As you work, *commit* your `.rmd` file to your private GitHub directory.
 * Once complete, compile your homework to an HTML document using Rstudio's `Knit HTML` button. This will produce a new, formatted document with `.html` extension.
 
 ### Steps for submitting HW using GitHub
 
-1. Check that you have commited all the files associated with your HW assignment to your local Git repository. This may include more than just the `.html` file. For examples, figures a placed in a`/figures` subdirectory
+1. Check that you have committed all the files associated with your HW assignment to your local Git repository.
+2. Sync your local repository to GitHub.
+3. Navigate to GitHub using a web browser and open your private repository.
+4. Copy the revision `SHA` located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled `latest commit`. It can be copied by clicking on the clipboard icon.
+5. Create a new issue by clicking `Issues` on the right side of the page. Title the issue "UID_hwX", where UID is your UID and X is the assignment number.
+6. In the comments window, add my GitHub username as follows: `@FitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so it should look something like: `@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
+7. Click `Submit new issue`.
+8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw01`).
+9. Click on the `+` sign to add a new file and name it `README.md`.
+10. Add the following information to the `README.md` file:
+  + UID homework 01 submission (replacing UID with your UID).
+  + 
 
 
 
