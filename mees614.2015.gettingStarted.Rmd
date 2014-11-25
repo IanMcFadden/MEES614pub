@@ -29,7 +29,7 @@ Git is a file version control system and GitHub is an online Git resource for co
 
 ### RStudio
 
-RStudio is a powerful and productive user interface for R that integrates scripting, running those scripts in R, plotting, help files, and Git. Download and install [RStudio](http://www.rstudio.com/). You want the **desktop** version for your system.
+RStudio is a powerful and productive user interface for R that integrates coding, running scripts in R, plotting, help files, and Git versioning software. Download and install [RStudio](http://www.rstudio.com/). You want the **desktop** version for your system.
 
 ### Stypi
 
@@ -47,16 +47,19 @@ R Markdown comes with RStudio, but you will need to install a few packages the f
 
 ### Steps for submitting HW using GitHub
 
-1. Check that you have committed all the files associated with your HW assignment to your local Git repository.
+1. Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like `hw01`).
 2. Sync your local repository to GitHub.
 3. Navigate to GitHub using a web browser and open your private repository.
 4. Copy the revision `SHA` located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled `latest commit`. It can be copied by clicking on the clipboard icon.
 5. Create a new issue by clicking `Issues` on the right side of the page. Title the issue "UID_hwX", where UID is your UID and X is the assignment number.
-6. In the comments window, add my GitHub username as follows: `@FitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so it should look something like: `@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
+6. In the comments window, add my GitHub username as follows: `@FitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so once complete, you should have something like: `@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
 7. Click `Submit new issue`.
+
+Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.  
+
 8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw01`).
-9. Click on the `+` sign to add a new file and name it `README.md`.
-10. Add the following to the `README.md` file:
+9. Click on the `+` sign to add a new file and name it `README.md`. NOTE: You can also copy an existing `README.md` file to your folder & edit it.
+10. Add at least the following infromation to the `README.md` file:
   + A line of text describing what is in the folder, such as: `UID homework 01 submission` (replacing UID with your UID).
   + A link to the HTML file representing the completed assignment. To get the link, do the following:
     + Click on the HTML file in the list of files in the repository.
