@@ -64,23 +64,4 @@ Completing Step 7 submits your assignment to me, but going a few steps further w
   + A link to the HTML file representing the completed assignment. To get the link, do the following:
     + Click on the HTML file in the list of files in the repository.
     + Click on the `Raw` button and then copy the URL from the address bar of your web browser.
-    + Paste the link into your `README.md` file and the add the following text `http://htmlpreview.github.io` so it will look something like `http://htmlpreview.github.io/?https://raw.github...`.
-
-
-
-
-
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, echo=TRUE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+    + Paste the link into your `README.md` file and the add the following text `http://htmlpreview.github.io/?` so it will look something like `http://htmlpreview.github.io/?https://raw.github...`.
