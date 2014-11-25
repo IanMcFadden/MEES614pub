@@ -53,7 +53,7 @@ R Markdown comes with RStudio, but you will need to install a few packages the f
 4. Copy the revision `SHA` located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled `latest commit`. It can be copied by clicking on the clipboard icon.
 5. Create a new issue by clicking `Issues` on the right side of the page. Title the issue "UID_hwX", where UID is your UID and X is the assignment number.
 6. In the comments window, add my GitHub username as follows: `@FitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so once complete, you should have something like: `@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
-7. Click `Submit new issue`.
+7. Click `Submit new issue` and you're done...sort of...
 
 Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.  
 
