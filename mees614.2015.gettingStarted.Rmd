@@ -1,3 +1,5 @@
+http://htmlpreview.github.io/?https://raw.githubusercontent.com/fitzLab-AL/MEES614p/master/mees614.2015.gettingStarted.Rmd
+
 ---
 output: html_document
 ---
