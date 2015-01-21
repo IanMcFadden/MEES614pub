@@ -52,41 +52,54 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
-<div id="getting-set-up-for-mees614" class="section level1">
-<h1>Getting set up for MEES614</h1>
+<div id="completing-submitting-homework-assignments" class="section level1">
+<h1>Completing &amp; Submitting Homework Assignments</h1>
 <hr />
-<div id="software-user-accounts" class="section level2">
-<h2>Software &amp; User Accounts</h2>
-<div id="r" class="section level3">
-<h3>R</h3>
-<p>As the name of the course implies, we will use R for all coursework. Because knowing basic R is a prerequisite for registering for this course, you should not need to download and install the latest version of <a href="http://cran.r-project.org/">R</a> for your system…unless you just bought a new computer.</p>
-</div>
-<div id="rstudio" class="section level3">
-<h3>RStudio</h3>
-<p>RStudio is a powerful and productive user interface for R that integrates coding, running scripts in R, plotting, help files, and Git versioning software (see next item). Download and install <a href="http://www.rstudio.com/">RStudio</a>. You want the free <strong>desktop</strong> version for your system.</p>
-</div>
-<div id="git-github" class="section level3">
-<h3>Git &amp; GitHub</h3>
-<p>Git is a file version control system and GitHub is an online Git resource for coding-based projects. We will use GitHub to track different versions of our R scripts, turn in homework assignments, and share code. There are multiple steps for setting up Git and GitHub for use in this course:</p>
-<ol style="list-style-type: decimal">
-<li>We’ll install several Git-related items. This first step is to install Git itself, which interfaces with RStudio (see below). Download and install <a href="http://git-scm.com/">Git</a> for your system.</li>
-<li>Setup RStudio to work with Git. In RStudio, under <code>Tools-Global Options</code>, click on <code>Git/SVN</code> at the bottom. You’ll need to tell RStudio where to find Git (i.e., where it is installed on your system). This will differ from system to system, but on a Mac it will probably be at <code>\usr\bin\git</code>. On Windows try: <code>C:/Program Files (x86)/Git/bin/git.exe</code>.</li>
-<li>Setup a <a href="https://github.com/join">free GitHub account</a>.</li>
-<li>Download and install the GitHub GUI client for your system: <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. This software will serve as an interface between Rstudio and the online version of GitHub.</li>
-<li>Open the GitHub GUI. You be asked for your GitHub login credentials during setup. Your GitHub username and email should appear in the Configuration window - all edits to your code (or anyone else’s) will be marked with these identifiers.</li>
-<li>Once setup is complete, create the following <em>repository</em> (place where you will store your files on your local computer and, eventually, on GitHub):
+<div id="using-git-with-rstudio" class="section level3">
+<h3>Using Git with Rstudio</h3>
+<p>To use Git with RStudio, you need to work with a <code>Project</code>. Because we already have existing directories under Git version control (your public and private repositories), you simply need to create a new RStudio project in one of those directories &amp; Git version control features will be automatically enabled, as follows:</p>
 <ul>
-<li>For group work that anyone can access, create a <strong>public</strong> GitHub repository. Click the <code>+</code> sign in the upper left and then <code>Create</code>. Name this repository <code>mees614-2015-lastname-firstname</code> using your name. <strong>Note the path where your repositories will be saved and change this path if you want them somewhere else.</strong> For example, you might instead save them to a folder named <code>code</code> or <code>MEES614</code>. To finish click <code>Create repository</code>. Lastly, click <code>Publish repository</code>, which will copy the repository to your GitHub account online. Go have a look at your GitHub account and confirm it is there.</li>
-<li>Send me your user name and UID. I will create a second <strong>private</strong> repository that only you &amp; I can see &amp; where you will store homework and other assignments. This repository will be named <code>mees614-2015-UID</code>, replacing “UID” with your UID.</li>
-</ul></li>
-<li><em>Clone</em> your <strong>private</strong> repositories to your personal computer. Click the <code>+</code> sign in the upper left and then <code>Clone</code>. Your private repository named <code>mees614-2015-UID</code> should be listed in the window. Click <code>Clone mees614-2015-UID</code> at the bottom to create a local copy on your machine.</li>
-<li>On your local machine and within the newly cloned <strong>private</strong> repository (the one named <code>mees614-2015-UID</code>), create a folder named <code>hw01</code> (this is done in Explorer/Finder, not the GitHub GUI). You will need to create a new directory for each assignment (but one is enough for now). Note that becuase Git tracks <em>files</em>, you will not see any trace of your <code>hw01</code> folder on GitHub or in the GitHub GUI until you add some files to the folder.</li>
+<li>From the <code>File</code> menu, select <code>New Project</code></li>
+<li>Select <code>Existing directory</code></li>
+<li>Browse to the respository you want to use (e.g., <code>hw01</code>) and click <code>Create Project</code></li>
+<li>Start a new script/document/etc from the <code>File</code> menu, <code>New File</code></li>
+</ul>
+</div>
+<div id="authoring-hw-using-r-markdown" class="section level3">
+<h3>Authoring HW using R Markdown</h3>
+<p>R Markdown comes with RStudio, but you will need to install a few packages the first time you want to <em>knit</em> and R Markdown document (RStudio will do this automatically for you). You will code your assignments in R and <em>author</em> them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown <a href="http://rmarkdown.rstudio.com/">here</a>. BTW - this document was created using R Markdown. Basic steps:</p>
+<ul>
+<li>Author your homework using R Markdown. The raw file should be saved (by default) with a <code>.rmd</code> extension. <strong>Be sure to save the file in the correct local folder</strong> (e.g., <code>hw01</code> for the first homework assignment.</li>
+<li>As you work, <em>commit</em> your <code>.rmd</code> file to your private GitHub directory.</li>
+<li>Once complete, compile your homework to an HTML document using Rstudio’s <code>Knit HTML</code> button. This will produce a new, formatted document with <code>.html</code> extension.</li>
+</ul>
+</div>
+<div id="steps-for-submitting-hw-using-github" class="section level3">
+<h3>Steps for submitting HW using GitHub</h3>
+<ol style="list-style-type: decimal">
+<li>Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like <code>hw01</code>).</li>
+<li>Sync your local repository to GitHub.</li>
+<li>Navigate to your GitHub account using a web browser and open your private repository.</li>
+<li>Copy the revision <code>SHA</code> located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled <code>latest commit</code>. It can be copied by clicking on the clipboard icon.</li>
+<li>Create a new issue by clicking <code>Issues</code> on the right side of the page. Title the issue “UID_hwX”, where UID is your UID and X is the assignment number.</li>
+<li>In the comments window, add my GitHub username as follows: <code>@FitzLab-AL</code> and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so once complete, you should have something like: <code>@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41</code>.</li>
+<li>Click <code>Submit new issue</code> and you’re done…sort of…</li>
 </ol>
-</div>
-<div id="stypi" class="section level3">
-<h3>Stypi</h3>
-<p>We will use <a href="https://code.stypi.com">Stypi</a> to facilitate live, collaborative coding. Please visit the <a href="https://code.stypi.com">site</a> and create a user account. When you are done, email your Stypi username to me: <a href="mailto:mfitzpatrick@al.umces.edu">mfitzpatrick@al.umces.edu</a>.</p>
-</div>
+<p>Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>On GitHub, navigate to the directory you created for the homework assignment (e.g., <code>hw01</code>).</li>
+<li>Click on the <code>+</code> sign to add a new file and name it <code>README.md</code>. NOTE: You can also copy an existing <code>README.md</code> file to your folder &amp; edit it.</li>
+<li>Add at least the following infromation to the <code>README.md</code> file:</li>
+</ol>
+<ul>
+<li>A line of text describing what is in the folder, such as: <code>UID homework 01 submission</code> (replacing UID with your UID).</li>
+<li>A link to the HTML file representing the completed assignment. To get the link, do the following:
+<ul>
+<li>Click on the HTML file in the list of files in the repository.</li>
+<li>Click on the <code>Raw</code> button and then copy the URL from the address bar of your web browser.</li>
+<li>Paste the link into your <code>README.md</code> file and the add the following text <code>http://htmlpreview.github.io/?</code> so it will look something like <code>http://htmlpreview.github.io/?https://raw.github...</code>.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 
