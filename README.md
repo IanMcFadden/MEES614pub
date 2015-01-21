@@ -5,4 +5,4 @@ Public repository for Spatial &amp; Landscape Ecology in R - a course about broa
 
 [Getting setup](http://htmlpreview.github.io/?https://raw.githubusercontent.com/fitzLab-AL/MEES614p/master/mees614.2015.gettingStarted.html)
 
-[Submitting Homework]
+[Submitting Homework](http://htmlpreview.github.io/?https://raw.githubusercontent.com/fitzLab-AL/MEES614p/master/mees614.2015.submittingHW.html)
