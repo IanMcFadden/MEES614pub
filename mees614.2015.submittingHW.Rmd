@@ -48,7 +48,7 @@ Completing Step 7 submits your assignment to me, but going a few steps further w
 Here is an example [README.md](https://github.com/fitzLab-AL/MEES614p/blob/master/README.md) that that links to other pages. Click on `Raw` to see how links are added.
 
 ### Make sure others (me) can reproduce your work with a few clicks...
-1. In the very first chuck of R code, load all necessary packages
+1. In the very first chunk of R code, load all necessary packages
 2. In the second chunk of code, load anything coming from external files. 
 3. Clone a fresh copy of your repository from GitHub, start a new RStudio session and knit the R Markdown file. It should work without error.
 
