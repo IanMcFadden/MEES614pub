@@ -8,24 +8,25 @@ Completing & Submitting Homework Assignments
 
 
 ### Using Git with Rstudio
-To use Git with RStudio, you need to work with a `Project`. Because we already have existing directories under Git version control (your public and private repositories), you simply need to create a new RStudio project in one of those directories & Git version control features will be automatically enabled, as follows:
+To track your R scripts using Git & RStudio, you need to work with a R *Project*. Because we already have existing directories under Git version control (your public and private repositories), you simply need to create a new RStudio project in one of those directories & Git version control features will be automatically enabled, as follows:
 
 + From the `File` menu, select `New Project`
 + Select `Existing directory`
-+ Browse to the respository you want to use (e.g., `hw01`) and click `Create Project`
++ Browse to the respository you want to use (e.g., `hw00`) and click `Create Project`
 + Start a new script/document/etc from the `File` menu, `New File` 
 
 ### Authoring HW using R Markdown
 
 R Markdown comes with RStudio, but you will need to install a few packages the first time you want to *knit* and R Markdown document (RStudio will do this automatically for you). You will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). BTW - this document was created using R Markdown. Basic steps:
 
-* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension. **Be sure to save the file in the correct local folder** (e.g., `hw01` for the first homework assignment.
+* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension. **Be sure to save the file in the correct local folder** (e.g., `hw00` for the first homework assignment.
 * As you work, *commit* your `.rmd` file to your private GitHub directory.
 * Once complete, compile your homework to an HTML document using Rstudio's `Knit HTML` button. This will produce a new, formatted document with `.html` extension.
+* Commit your new html document.
 
 ### Steps for submitting HW using GitHub
 
-1. Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like `hw01`).
+1. Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like `hw00`).
 2. Sync your local repository to GitHub.
 3. Navigate to your GitHub account using a web browser and open your private repository.
 4. Copy the revision `SHA` located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled `latest commit`. It can be copied by clicking on the clipboard icon.
@@ -35,7 +36,7 @@ R Markdown comes with RStudio, but you will need to install a few packages the f
 
 Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.  
 
-8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw01`).
+8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw00`).
 9. Click on the `+` sign to add a new file and name it `README.md`. NOTE: You can also copy an existing `README.md` file to your folder & edit it.
 10. Add at least the following infromation to the `README.md` file:
   + A line of text describing what is in the folder, such as: `UID homework 01 submission` (replacing UID with your UID).
@@ -43,3 +44,12 @@ Completing Step 7 submits your assignment to me, but going a few steps further w
     + Click on the HTML file in the list of files in the repository.
     + Click on the `Raw` button and then copy the URL from the address bar of your web browser.
     + Paste the link into your `README.md` file and the add the following text `http://htmlpreview.github.io/?` so it will look something like `http://htmlpreview.github.io/?https://raw.github...`.
+    
+Here is an example [README.md](https://github.com/fitzLab-AL/MEES614p/blob/master/README.md) that that links to other pages. Click on `Raw` to see how links are added.
+
+### Make sure others (me) can reproduce your work with a few clicks...
+1. In the very first chuck of R code, load all necessary packages
+2. In the secodn chunck of code, load anything coming from external files. 
+3. Clone a fresh copy of your repository from GitHub, start a new RStudio session and knit the R Markdown file. It should work without error.
+
+***

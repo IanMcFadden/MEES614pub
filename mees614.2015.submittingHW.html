@@ -57,11 +57,11 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <hr />
 <div id="using-git-with-rstudio" class="section level3">
 <h3>Using Git with Rstudio</h3>
-<p>To use Git with RStudio, you need to work with a <code>Project</code>. Because we already have existing directories under Git version control (your public and private repositories), you simply need to create a new RStudio project in one of those directories &amp; Git version control features will be automatically enabled, as follows:</p>
+<p>To track your R scripts using Git &amp; RStudio, you need to work with a R <em>Project</em>. Because we already have existing directories under Git version control (your public and private repositories), you simply need to create a new RStudio project in one of those directories &amp; Git version control features will be automatically enabled, as follows:</p>
 <ul>
 <li>From the <code>File</code> menu, select <code>New Project</code></li>
 <li>Select <code>Existing directory</code></li>
-<li>Browse to the respository you want to use (e.g., <code>hw01</code>) and click <code>Create Project</code></li>
+<li>Browse to the respository you want to use (e.g., <code>hw00</code>) and click <code>Create Project</code></li>
 <li>Start a new script/document/etc from the <code>File</code> menu, <code>New File</code></li>
 </ul>
 </div>
@@ -69,15 +69,16 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h3>Authoring HW using R Markdown</h3>
 <p>R Markdown comes with RStudio, but you will need to install a few packages the first time you want to <em>knit</em> and R Markdown document (RStudio will do this automatically for you). You will code your assignments in R and <em>author</em> them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown <a href="http://rmarkdown.rstudio.com/">here</a>. BTW - this document was created using R Markdown. Basic steps:</p>
 <ul>
-<li>Author your homework using R Markdown. The raw file should be saved (by default) with a <code>.rmd</code> extension. <strong>Be sure to save the file in the correct local folder</strong> (e.g., <code>hw01</code> for the first homework assignment.</li>
+<li>Author your homework using R Markdown. The raw file should be saved (by default) with a <code>.rmd</code> extension. <strong>Be sure to save the file in the correct local folder</strong> (e.g., <code>hw00</code> for the first homework assignment.</li>
 <li>As you work, <em>commit</em> your <code>.rmd</code> file to your private GitHub directory.</li>
 <li>Once complete, compile your homework to an HTML document using Rstudio’s <code>Knit HTML</code> button. This will produce a new, formatted document with <code>.html</code> extension.</li>
+<li>Commit your new html document.</li>
 </ul>
 </div>
 <div id="steps-for-submitting-hw-using-github" class="section level3">
 <h3>Steps for submitting HW using GitHub</h3>
 <ol style="list-style-type: decimal">
-<li>Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like <code>hw01</code>).</li>
+<li>Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like <code>hw00</code>).</li>
 <li>Sync your local repository to GitHub.</li>
 <li>Navigate to your GitHub account using a web browser and open your private repository.</li>
 <li>Copy the revision <code>SHA</code> located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled <code>latest commit</code>. It can be copied by clicking on the clipboard icon.</li>
@@ -87,7 +88,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </ol>
 <p>Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.</p>
 <ol start="8" style="list-style-type: decimal">
-<li>On GitHub, navigate to the directory you created for the homework assignment (e.g., <code>hw01</code>).</li>
+<li>On GitHub, navigate to the directory you created for the homework assignment (e.g., <code>hw00</code>).</li>
 <li>Click on the <code>+</code> sign to add a new file and name it <code>README.md</code>. NOTE: You can also copy an existing <code>README.md</code> file to your folder &amp; edit it.</li>
 <li>Add at least the following infromation to the <code>README.md</code> file:</li>
 </ol>
@@ -100,6 +101,16 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Paste the link into your <code>README.md</code> file and the add the following text <code>http://htmlpreview.github.io/?</code> so it will look something like <code>http://htmlpreview.github.io/?https://raw.github...</code>.</li>
 </ul></li>
 </ul>
+<p>Here is an example <a href="https://github.com/fitzLab-AL/MEES614p/blob/master/README.md">README.md</a> that that links to other pages. Click on <code>Raw</code> to see how links are added.</p>
+</div>
+<div id="make-sure-others-me-can-reproduce-your-work-with-a-few-clicks" class="section level3">
+<h3>Make sure others (me) can reproduce your work with a few clicks…</h3>
+<ol style="list-style-type: decimal">
+<li>In the very first chuck of R code, load all necessary packages</li>
+<li>In the secodn chunck of code, load anything coming from external files.</li>
+<li>Clone a fresh copy of your repository from GitHub, start a new RStudio session and knit the R Markdown file. It should work without error.</li>
+</ol>
+<hr />
 </div>
 </div>
 
