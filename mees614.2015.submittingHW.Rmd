@@ -19,24 +19,24 @@ To track your R scripts using Git & RStudio, you need to work with a R *Project*
 
 R Markdown comes with RStudio, but you will need to install a few packages the first time you want to *knit* and R Markdown document (RStudio will do this automatically for you). You will code your assignments in R and *author* them in R Markdown. You will use GitHub to submit your R Markdown documents to me. You can learn more about R Markdown [here](http://rmarkdown.rstudio.com/). BTW - this document was created using R Markdown. Basic steps:
 
-* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension. **Be sure to save the file in the correct local folder** (e.g., `hw00` for the first homework assignment.
+* Author your homework using R Markdown. The raw file should be saved (by default) with a `.rmd` extension. **Be sure to save the file in the correct local folder** (e.g., `hw01` for the first homework assignment.
 * As you work, *commit* your `.rmd` file to your private GitHub directory.
 * Once complete, compile your homework to an HTML document using Rstudio's `Knit HTML` button. This will produce a new, formatted document with `.html` extension.
 * Commit your new html document.
 
 ### Steps for submitting HW using GitHub
 
-1. Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like `hw00`).
+1. Check that you have committed all the files associated with your HW assignment to your local Git repository (recall you should be saving these files in a folder named something like `hw01`).
 2. Sync your local repository to GitHub.
 3. Navigate to your GitHub account using a web browser and open your private repository.
 4. Copy the revision `SHA` located above and to the right of the list of files in the repository. It is a series of 10 letters and numbers labeled `latest commit`. It can be copied by clicking on the clipboard icon.
 5. Create a new issue by clicking `Issues` on the right side of the page. Title the issue "UID_hwX", where UID is your UID and X is the assignment number.
-6. In the comments window, add my GitHub username as follows: `@FitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so once complete, you should have something like: `@FitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
+6. In the comments window, add my GitHub username as follows: `@fitzLab-AL` and then paste the revision SHA. Note that the SHA is actually longer than 10 characters, so once complete, you should have something like: `@fitzLab-AL ce5f188d3a17017085c0e05c0276b4117d40cd41`.
 7. Click `Submit new issue` and you're done...sort of...
 
 Completing Step 7 submits your assignment to me, but going a few steps further will make it easier for others to interface with your work.  
 
-8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw00`).
+8. On GitHub, navigate to the directory you created for the homework assignment (e.g., `hw01`).
 9. Click on the `+` sign to add a new file and name it `README.md`. NOTE: You can also copy an existing `README.md` file to your folder & edit it.
 10. Add at least the following information to the `README.md` file:
   + A line of text describing what is in the folder, such as: `UID homework 01 submission` (replacing UID with your UID).
@@ -45,7 +45,7 @@ Completing Step 7 submits your assignment to me, but going a few steps further w
     + Click on the `Raw` button and then copy the URL from the address bar of your web browser.
     + Paste the link into your `README.md` file and the add the following text `http://htmlpreview.github.io/?` so it will look something like `http://htmlpreview.github.io/?https://raw.github...`.
     
-Here is an example [README.md](https://github.com/fitzLab-AL/MEES614p/blob/master/README.md) that that links to other pages. Click on `Raw` to see how links are added.
+Here is an example [README.md](https://github.com/fitzLab-AL/MEES614p/blob/master/README.md) that that links to other pages. Click on `Raw` to see how to add links.
 
 ### Make sure others (me) can reproduce your work with a few clicks...
 1. In the very first chunk of R code, load all necessary packages
